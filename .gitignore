@@ -1,0 +1,21 @@
+# Ignore Python runtime files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment and configuration files
+.env
+config.py
+
+# Ignore data and log files
+*.log
+*.sqlite
+
+# Ignore build directory
+build/
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore OS generated files
+.DS_Store
