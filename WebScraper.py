@@ -21,6 +21,7 @@ def scrape(url, max):
         if response.status_code == 200:
             #Saving the html of the page from the get request
             html_content = response.text
+            
             #Taking the sumn and doing sumn
             soup = bs(html_content, 'html.parser')
             
@@ -39,8 +40,7 @@ def scrape(url, max):
             print("There has been an error")
             
         #Delay to not overload the server for the page that we are scraping from
-        time.sleep(1) 
-
-
-
-scrape(url, max)
+        time.sleep(1)
+        
+if __name__ == "__main__":
+    scrape(url, max)
